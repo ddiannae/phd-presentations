@@ -18,12 +18,9 @@
 		<div class="reveal">
 			<div class="slides">
 				<section class="center">
-					<h3>Evaluaci&oacute;n de la regulaci&oacute;n trans en c&aacute;ncer: un enfoque de biolog&iacute;a de sistemas</h3>
-					<p>M. en C. Diana Elisa Garc&iacute;a Cort&eacute;s</p>
-					<p>Tutor principal: Dr. Jes&uacute;s Espinal Enriquez</p>
-					<hr></hr>
-					<p>Comité tutor: <br/> Dr. Alfredo Hidalgo Miranda <br/>
-									Dr. Gustavo Martínez-Mekler </p>
+					<h3>Loss of inter-chromosomal co-expression is a common feature in cancer</h3>
+					<p>MS Diana Garc&iacute;a Cort&eacute;s</p>
+					<p>Advisor: Dr. Jes&uacute;s Espinal Enriquez</p>
 				</section>
 				<!--<section>
 					<blockquote cite="https://www.nature.com/articles/s41586-020-1969-6">
@@ -50,14 +47,14 @@
 					
 				</section> -->
 				<section class="center"> <!--data-background="#ffffff"> -->
-					<img src="img/intro/circo-plot-mama.png"/>
+					<img src="img/intro/circo-plot-mama-ingles.png"/>
 					<small class="cita">Espinal-Enr&iacute;quez, J., Fresno, C., Anda-J&aacute;uregui, G., & Hern&aacute;ndez-Lemus, E. (2017).
 						 <b>RNA-Seq based genome-wide analysis reveals loss of inter-chromosomal regulation in breast cancer</b>.
 						  Scientific Reports, 7(1), 1–19. </small>
 				</section>
 
 				<section class="center"> <!--data-background="#ffffff"> -->
-					<img src="img/intro/network-plot-mama.png"/>
+					<img src="img/intro/network-plot-mama-ingles.png"/>
 					<small class="cita">Espinal-Enr&iacute;quez, J., Fresno, C., Anda-J&aacute;uregui, G., & Hern&aacute;ndez-Lemus, E. (2017).
 						 <b>RNA-Seq based genome-wide analysis reveals loss of inter-chromosomal regulation in breast cancer</b>.
 						  Scientific Reports, 7(1), 1–19. </small>
@@ -65,54 +62,28 @@
 
 				<section class="center">
 					<ul>
-						<li>Las redes de co-expresi&oacute;n, inferidas a partir de datos de </br>RNA-seq, nos permiten estudiar
-							el transcriptoma.
-							<ul>
-								<li>Gracias a la gran cantidad de muestras: 780 c&aacute;ncer y 101 sanos.</li>
-							</ul>
-						</li>
-						<li class="fragment slide-in">En el transcriptoma de c&aacute;ncer de mama hay una p&eacute;rdida de (regulaci&oacute;n) 
-							co-expresi&oacute;n inter-cromos&oacute;mica al compararlo con el tejido sano.
+						<li>Co-expression networks, infered from RNA-seq data allow us to study significant transcriptome interactions.
+						<li class="fragment slide-in">In breast cancer, there is a loss of inter-chromosomal co-expression.
 							<ul>
 								<li>
-									Tejido sano: Interacciones entre genes de diferentes cromosomas.
+									Normal tissue: Interactions from genes in different chromosomes.
 								</li>
 								<li>
-									C&aacute;ncer : Interacciones entre genes vecinos del mismo cromosoma.
+									Cancer tissue: Interactions from neighbor genes in the same chromosome.
 								</li>
 							</ul>
 						</li>
-						<li class="fragment slide-in"> Se observan, por primera vez, estas diferencias en el tejido tumoral y el tejido sano. 
+						<li class="fragment slide-in"> This is the first time that this differences are reported. 
 
 						</li>
 					</ul>
 				</section>
 				<section data-background="#002b36" data-background-transition="zoom" class="center">
-						<h3>Pregunta de investigaci&oacute;n</h3>
-						<p class="fragment fade-up">Si la regulaci&oacute;n inter-cromos&oacute;mica se pierde en
-						c&aacute;ncer de mama. ¿Se pierde tambi&eacute;n en otros tipos de c&aacute;ncer?</p>
-				</section>
-				<section data-background="#ffffff" data-background-transition="zoom" class="center">
-						<h3>Objetivo General</h3>
-						<p class="fragment fade-up">Evaluar la regulaci&oacute;n transcripcional inter e
-							intra-cromos&oacute;mica en diferentes tipos de c&aacute;ncer mediante un enfoque de biolog&iacute;a de sistemas.</p>
-				</section>
-				<section data-background="#002b36" data-background-transition="zoom" class="center">
-						<h3>Objetivos Espec&iacute;ficos</h3>
-						<ul>
-							<li class="fragment fade-in-then-semi-out visible">Construir redes de
-								co-expresi&oacute;n gen&eacute;tica con datos de  RNA-Seq de tejido tumoral y
-								 tejido sano para diferentes tipos de c&aacute;ncer.</li>
-							<li class="fragment fade-in-then-semi-out visible">Identificar la localizaci&oacute;n
-								cromos&oacute;mica de los genes que resulten relacionados en dichas redes.</li>
-							<li class="fragment fade-in-then-semi-out visible">Comparar la proporci&oacute;n de interacciones inter e
-								 intra-cromos&oacute;micas en las redes obtenidas.</li>
-							<li class="fragment fade-in-then-semi-out visible">Analizar si la p&eacute;rdida de regulaci&oacute;n
-								inter-cromos&oacute;mica es un fen&oacute;meno generalizado en  c&aacute;ncer.</li>
-						</ul>
+						<h3 class="fragment fade-up">If there is a loss of inter-chromosomal co-expression in breast cancer, can we observe this 
+							phenomenon in other cancer types?</h3>
 				</section>
 				<section  data-transition="slide-in" >
-					<h4>Metodolog&iacute;a</h4>
+					<h4>Methodology</h4>
 						<div style="float:left;width:35%;text-align:left">
 							<img src="img/metod/data-base.png" style="border:none; box-shadow:none;"/>
 							
@@ -243,181 +214,80 @@
 							</table>
 						</div>
 					</section>
-				<section class="center" data-transition="slide-in" >
-					<h3>Para cada tipo de c&aacute;ncer</h3>
-					<ul>
-						<li>Valores promedio co-expresi&oacute;n por cada 100K base pairs </li>
-						<li>Redes</li>
-							<ul>
-								<li>Interacciones compartidas entre las redes</li>
-								<li>Red de normal y cancer de interacciones repetidas</li>
-							</ul>
-						<li>Comunidades</li>
-							<ul>
-								<li>Enriquecimientos funcionales en las comunidades</li>
-								<li>Identificación de enriquecimientos compartidos</li>
-								<li>Identificación de enriquecimientos únicos</li>
-							</ul>
-					</ul>
+				<section>
+					<p><b>In cancer, strongest interactions are intra-chromosomal</b></p>
+					<img src="img/pan-loss/figure1a.png">
 				</section>
 				<section>
-					<p><b>En cancer, las interacciones más fuertes son intra-cromosomales</b></p>
-					<img src="img/pan-loss/intra_interks.png">
-					<p class="sssmaller">Prueba de Kolmogorov-Smirnov. ¿Cuál es la probabilidad de que las muestras vengan de la misma distribución de probabilidad? Mediante la distancia entre la
-						las distribuciones.
-					</p>
+					<p><b>In cancer, strongest interactions are intra-chromosomal</b></p>
+					<img src="img/pan-loss/intra-inter-log.png">
 				</section>
 				<section>
-					<p><b>En cancer, las interacciones más fuertes son intra-cromosomales</b></p>
-					<img src="img/pan-loss/figure1a.png">	
+					<p><b>There is a loss of long-range co-expression in cancer</b></p>
+					<img src="img/pan-loss/figure_intra_distance.png" width="70%">
 				</section>
 				<section>
-					<p><b>En cancer, hay decaimiento de los valores de co-expresión dependientes de la distancia</b></p>
-					<img src="img/pan-loss/figure_intra_distance.png">
-					<p class="smaller">Bins con 1000 interacciones. Wilcoxon test entre cada par de bins. </p>
-				</section>
-				<section>
-					<p><b>Las redes de tejido de cáncer y normal son diferentes</b></p>
+					<p><b>Cancer and normal co-expression networks have different topologies</b></p>
 					<img src="img/pan-loss/networks_normal_cancer.png" width="60%">
 				</section>
 				<section>
-					<p><b>Las intersección de las redes de interacciones frecuentes contiene genes que codifican para
-						riboproteínas
+					<p><b>Links are mostly unique in normal co-expression networks, but not in cancer</b></p>
+					<img src="img/pan-loss/interactions_intersectionsA.png" width="80%">
+				</section>
+				<section>
+					<p><b>Links are mostly unique in normal co-expression networks, but not in cancer</b></p>
+					<img src="img/pan-loss/interactions_intersectionsB.png" width="70%">
+				</section>
+				<section>
+					<p><b>Riboprotein genes constitute a cluster shared by cancer and normal co-expression networks
 					</b></p>
-					<img src="img/pan-loss/shared-10.png" width="70%">
+					<img src="img/pan-loss/shared-10.png" width="60%">
 				</section>
 				<section>
-					<p><b>Asociación de comunidades a procesos biológicos en Gene Ontology</b></p>
-					<p>El p-value se calcula mediante la distribución hipergeométrica</p>
-					<img src="img/pan-loss/hipergeometrica.png">
-					<p class="left">Donde:</p>
-					<ul>
-						<li>N: número total de genes</li>
-						<li>M: número de genes anotados en una categoría de GO</li>
-						<li>n: número de genes en una comunidad</li>
-						<li>k: número de genes en la comunidad anotados en la categoría de GO </li>
-					</ul>
-				</section>
-				<section>
-					<p><b>Asortatividad cromosomal y asortatividad de expresión</b></p>
-				
-					<p class="separado">El coeficiente de asortatividad en una red indica la medida en la cual los vértices con las mismas propiedades se conectan entre ellos. 
-						Tiene un rango de [-1, 1].
-					</p>
-					<p class="left">Para cada comunidad:</p>
-					<ul>
-						<li> Cromosomal: <p>links mismo cromosoma - links diferentes cromosomas</p></li>
-						<li> De expresión: <p>links mismo signo LFC - links diferente signo LFC</p></li>
-						<li>Entre el total de links</li>
-					</ul>
-				</section>
-				<section>
-					<p><b>Las comunidades asociadas a procesos biológicos en cáncer tienen mayor asortatividad 
-						de expresión
+					<p><b>Distribution of chromosomal assortativity 
 					</b></p>
-					<img src="img/pan-loss/cancer_expr_assort_enrichement.png">
+					<img src="img/pan-loss/chr_assortativity.png" >
 				</section>
 				<section>
-					<p><b>Las comunidades asociadas a procesos biológicos en cáncer tienen menor asortatividad 
-						cromosomal
+					<p><b>Shared communities in cancer
 					</b></p>
-					<img src="img/pan-loss/cancer_chr_assort_enrichement.png">
+					<img src="img/pan-loss/jaccard_idxs.png"  width="60%" >
 				</section>
+				 <section>
+					<p><b>Shared communities in cancer
+					</b></p>
+					<img src="img/pan-loss/hlas.png"  width="60%" >
+				 </section>
 				<section>
-					<p><b>La asortatividad cromosomal no difiere en tejidos normales</b></p>
-					<img src="img/pan-loss/normal_chr_assort_enrichement.png">
-				</section>
-				<section>
-					<p><b>Procesos biológicos compartidos en normal</b></p>
-					<p>Red de procesos - comunidades con procesos asociados a más de 10 comunidades</p>
-					<img src="img/pan-loss/compartidos_sanos.png" >
-					<p>Nuevamente procesos asociados a riboproteínas</p>
-				</section>
-				<section>
-					<p><b>Procesos biológicos compartidos en cáncer</b></p>
-					<img src="img/pan-loss/compartidos_cancer_ribo.png" >
-					<p>Nuevamente procesos asociados a riboproteínas</p>
-				</section>
-				<section>
-					<p><b>Procesos biológicos compartidos en cáncer</b></p>
-					<img src="img/pan-loss/compartidos_cancer_hoxa.png" >
-					<p>Protocaderinas: adhesión celular. <br/>Genes HOXA-HOXB: desarrollo embrionario.</p>
-				</section>
-				<section>
-					<p><b>Respuesta inmune adaptativa</b></p>
-					<p class="smaller">Es el proceso biológico asociado a más comunidades en cáncer y as comunidades asociadas 
-						están en la parte "externa" de la red</p>
-					<p class="left">En vejiga:</p>
-					<img src="img/pan-loss/bladder_cancer.png" >	
-				</section>
-				<section>
-					<p><b>Coreness o descomposición k-core</b></p>
-					<p class="smaller">k-core: es la subgráfica maximal donde cada vértice tiene grado al menos k. Para cada vértice, obtenemos su coreness y agregamos por comunidad.</p>
-					<img src="img/pan-loss/cancer_kness_adaptive_immune.png" >
+					<p><b>Unique biological processes in cancer
+					</b></p>
+					<img src="img/pan-loss/ClueGO_soloCancer.png" width="65%">
 				</section>
 				<section class="center">
-					<h3>Conclusiones</h3>
+					<h3></h3>
 
 					<ul>
-						<li>La p&eacute;rdida de co-expresi&oacute;n a larga distancia es un 
-							fen&oacute;meno consistente, medible y reproducible presente en todos los perfiles estudiados. 
+						<li>The loss of inter-chromosomal co-expression and the loss of long-range co-expression are 
+							consistent, measurable and reproducible features present in all of the studied profiles.
 						</li>
 						<li class="fragment fade-up">
-							Hay una alteraci&oacute;n global en las interacciones del transcriptoma.
+							There is a global alteration of the interactions in the transcriptome.
 							<ul>
 								<li class="greenish">
-									Se prefieren caminos cortos.
+									Shorter distances are proferred.
 								</li>
 							</ul>
 						</li>
 						<li class="fragment fade-up">
-							Hay implicaciones a largo plazo en el fenotipo. 
-							<ul>
-								<li class="greenish">
-									O al menos, el fen&oacute;meno diferenc&iacute;a a dos fenotipos 
-									diferentes.
-								</li>
-							</ul>
+							There is a contribution of multiple altered regulatory mechanisms. 
 						</li>
 						<li class="fragment fade-up">
-							Hay contribuci&oacute;n de m&uacute;ltiples mecanismos alterados. 
-						</li>
-						<li class="fragment fade-up">
-							Su prevalencia sugiere una caracter&iacute;stica habilitadora del programa transcripcional.
-						</li>
-					</ul>
-				</section>
-				<section class = "center">
-					<img src="img/intro/emerging-hallmarks-cancer-ESP.png" style="width:70%;"/>
-					<small class="cita">Hanahan, Douglas, and Robert A. Weinberg. 
-					<b>Hallmarks of cancer: the next generation.</b> cell 144, no. 5 (2011): 646-674.</small>
-				</section>
-				<section class="center">
-					<h3>Trabajo futuro</h3>
-					<ul>
-						<li>
-							Analizar las muestras de los tejidos restantes: pr&oacute;stata, h&iacute;gado.  
-							<ul>
-								<li class="greenish">
-									Evaluar agregar tejidos con menos de 50 muestras en sanos.
-								</li>
-							</ul>
-						</li>
-						<li>
-							Analizar los resultados en todos los tejidos.
-							<ul>
-								<li class="greenish">
-									Expresi&oacute;n diferencial, procesos biol&oacute;gicos asociados, genes importantes para el fenotipo.
-								</li>
-							</ul>
-						</li>
-						<li>
-							Preparar art&iacute;culo.
+							Its prevalence suggests an enabling feature of the transcriptomal program.
 						</li>
 					</ul>
 				</section>
 				<section class="center">
-					<h3 class="pinkish">¡Gracias!</h3>
+					<h3 class="pinkish">Thank you!</h3>
 				</section>
 				<section>
 					<section class="center">
