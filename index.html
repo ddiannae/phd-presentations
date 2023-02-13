@@ -18,50 +18,57 @@
 		<div class="reveal">
 			<div class="slides">
 				<section class="center">
-					<h3>P&eacute;rdida de co-expresi&oacute;n a larga distancia en c&aacute;ncer</h3>
+					<h3>Evaluaci&oacute;n de la regulaci&oacute;n trans en c&aacute;ncer: un enfoque de biolog&iacute;a de sistemas</h3>
 					<p>M. en C. Diana Elisa Garc&iacute;a Cort&eacute;s</p>
+					<p>Tutor principal: Dr. Jes&uacute;s Espinal Enriquez</p>
 					<hr></hr>
-					<p>Laboratorio de Oncolog&iacute;a Te&oacute;rica </br>
-						INMEGEN</p>
+					<p>Comité tutor: <br/> Dr. Alfredo Hidalgo Miranda <br/>
+									Dr. Gustavo Martínez-Mekler </p>
 				</section>
-				
-				<section class="center"> <!--data-background="#ffffff"> -->
+				<section class="center"> 
 					<img src="img/intro/circo-plot-mama.png"/>
 					<small class="cita">Espinal-Enr&iacute;quez, J., Fresno, C., Anda-J&aacute;uregui, G., & Hern&aacute;ndez-Lemus, E. (2017).
 						 <b>RNA-Seq based genome-wide analysis reveals loss of inter-chromosomal regulation in breast cancer</b>.
 						  Scientific Reports, 7(1), 1–19. </small>
 				</section>
-
-				<section class="center"> <!--data-background="#ffffff"> -->
-					<img src="img/intro/network-plot-mama.png"/>
-					<small class="cita">Espinal-Enr&iacute;quez, J., Fresno, C., Anda-J&aacute;uregui, G., & Hern&aacute;ndez-Lemus, E. (2017).
-						 <b>RNA-Seq based genome-wide analysis reveals loss of inter-chromosomal regulation in breast cancer</b>.
-						  Scientific Reports, 7(1), 1–19. </small>
+				<section data-background="#002b36" data-background-transition="zoom" class="center">
+						<h3>Pregunta de investigaci&oacute;n</h3>
+						<p class="fragment fade-up">Si la regulaci&oacute;n inter-cromos&oacute;mica se pierde en
+						c&aacute;ncer de mama. ¿Se pierde tambi&eacute;n en otros tipos de c&aacute;ncer?</p>
 				</section>
-
-				<section class="center">
-					<ul>
-						<li>Las redes de co-expresi&oacute;n, inferidas a partir de datos de </br>RNA-seq, nos permiten estudiar
-							el transcriptoma.
-							<ul>
-								<li>Gracias a la gran cantidad de muestras: 780 c&aacute;ncer y 101 sanos.</li>
-							</ul>
+				<section data-background="#ffffff" data-background-transition="zoom" class="center">
+						<h3>Objetivo General</h3>
+						<p class="fragment fade-up">Evaluar la regulaci&oacute;n transcripcional inter e
+							intra-cromos&oacute;mica en diferentes tipos de c&aacute;ncer mediante un enfoque de biolog&iacute;a de sistemas.</p>
+				</section>
+				<section data-background="#002b36" data-background-transition="zoom" class="center">
+						<h3>Objetivos Espec&iacute;ficos</h3>
+						<ul>
+							<li class="fragment fade-in-then-semi-out visible">Construir redes de
+								co-expresi&oacute;n gen&eacute;tica con datos de  RNA-Seq de tejido tumoral y
+								 tejido sano para diferentes tipos de c&aacute;ncer.</li>
+							<li class="fragment fade-in-then-semi-out visible">Identificar la localizaci&oacute;n
+								cromos&oacute;mica de los genes que resulten relacionados en dichas redes.</li>
+							<li class="fragment fade-in-then-semi-out visible">Comparar la proporci&oacute;n de interacciones inter e
+								 intra-cromos&oacute;micas en las redes obtenidas.</li>
+							<li class="fragment fade-in-then-semi-out visible">Analizar si la p&eacute;rdida de regulaci&oacute;n
+								inter-cromos&oacute;mica es un fen&oacute;meno generalizado en  c&aacute;ncer.</li>
+						</ul>
+				</section>
+				<section class="center" data-background="#ffffff" data-background-transition="zoom" >
+					<h3>Meta-metodolog&iacute;a</h3>
+					<ol>
+						<li>Implementar una metodolog&iacute;a para evaluar la  p&eacute;rdida de </br> co-expresi&oacute;n
+							inter-cromos&oacute;mica que pueda aplicarse en distintos tejidos.
 						</li>
-						<li class="fragment slide-in">En el transcriptoma de c&aacute;ncer de mama hay una p&eacute;rdida de (regulaci&oacute;n) 
-							co-expresi&oacute;n inter-cromos&oacute;mica al compararlo con el tejido sano.
-							<ul>
-								<li>
-									Tejido sano: Interacciones entre genes de diferentes cromosomas.
-								</li>
-								<li>
-									C&aacute;ncer : Interacciones entre genes vecinos del mismo cromosoma.
-								</li>
-							</ul>
+						<li class="semi-out">Evaluar las contribuciones de algunos mecanismos de regulaci&oacute;n alterados en el fen&oacute;meno de 
+							p&eacute;rdida de la co-expresi&oacute;n a larga distancia.
+							
 						</li>
-						<li class="fragment slide-in"> Se observan, por primera vez, estas diferencias en el tejido tumoral y el tejido sano. 
-
+						<li class="semi-out">
+							Evaluar la p&eacute;rdida de regulaci&oacute;n a larga distancia en otros tipos de c&aacute;ncer.
 						</li>
-					</ul>
+					</ol>
 				</section>
 				<section>
 					
@@ -193,97 +200,6 @@
 							</table>
 						</div>
 					</section>
-					
-						<section class="center">
-							<h3>Informaci&oacute;n Mutua</h3>
-							<ul>
-								<li>Es una medida de dependencia estad&iacute;stica entre dos variables aleatorias.</li>
-								<li>Expresa qu&eacute; tanta informaci&oacute;n nos dice una variable sobre otra. </li>
-								
-							</ul>
-							<p class="greenish" style="text-align:center;">¿Qu&eacute; tanto el conocer los valores de expresi&oacute;n
-								del gen A en el conjunto de mis muestras me ayuda para conocer los valores de expresi&oacute;n
-								del gen B?
-							</p>
-							<ul>
-								<li>Reducci&oacute;n de <b>incertidumbre</b> de una variable aleatoria debido al conocimiento
-									debido al conocimiento del valor de otra variable.
-								</li>
-							</ul>
-						</section>
-						<section data-transition="slide-in">
-							<h3>Entrop&iacute;a</h3>
-							<ul>
-								<li>En forma cualitativa, es una medida de incertidumbre.</li>
-								<li>Caracteriza qu&eacute; tan dif&iacute;cil de predecir es una variable aleatoria.
-									<ul>
-										<li class="greenish">La variable X es el n&uacute;mero ganador en una ruleta. </li>
-										<li class="greenish">La variable Y es el n&uacute;mero ganador en una dado. </li>
-										<p class="greenish">La entrop&iacute;a de X es mayor que la entrop&iacute;a de Y </p>
-									</ul>
-								</li>
-								<li class="fragment fade-up">
-									Aunque no solo se toman en cuenta los posibles valores, sino tambi&eacute;n su frecuencia
-									<ul>
-										<li class="greenish">
-											Un dado cargado donde 90% de las tiradas resulta en 2 tiene menor entrop&iacute;a
-											que un dado sin cargar.
-										</li>
-									</ul>
-								</li>
-							</ul>
-						</section>
-						<section>
-							<h3>Entrop&iacute;a</h3>
-							<p>No es un concepto vago, tiene una deficini&oacute;n matem&aacute;tica precisa:</p>
-							<p> Si una variable aleatoria $X$ toma valores en el conjunto
-								$\chi = {x_1, x_2, x_3, \dots ,x_n }$, entonces la entrop&iacute;a de la variable 
-							aleatoria   $X$ se calcula como</p>
-							\[\begin{aligned}
-							H(X) = - \sum_{x \in \chi} P(x) \log P(x)
-							\end{aligned} \]
-							<p> Si tomamos $\log$ en base 2, la entrop&iacute;a se expresa en bits. </p>
-						</section>
-						<section>
-							<h3>Entrop&iacute;a</h3>
-							<p>Pero est&aacute;bamos hablando de dos variables.</p>
-							<p><b>Entrop&iacute;a conjunta:</b> Calcular entrop&iacute;a sobre todos los posibles
-							pares de las variables aleatorias. </p>
-							\[\begin{aligned}
-							H(X, Y) = - \sum_{x \in \chi} \sum_{y \in \psi}  P(x,y) \log P(x,y)
-							\end{aligned} \]
-							<p><b>Entrop&iacute;a condicional:</b> La entrop&iacute;a de una variable aleatoria dada otra. </p>
-								\[\begin{aligned}
-								H(X| Y) = - \sum_{x \in \chi}   P(x) H(Y|X=x)
-								\end{aligned} \]
-						</section>
-						<section>
-							<h3>Entrop&iacute;a</h3>
-							<p>Ambas est&aacute;n relacionadas por las siguientes igualdades</p>
-							
-							\[\begin{aligned}
-							H(X, Y) = H(X) + H(X|Y)
-							\end{aligned} \]
-							\[\begin{aligned}
-							H(X|Y) \neq H(Y|X)
-							\end{aligned} \]
-							\[\begin{aligned}
-							H(X) - H(X|Y) = H(Y) - H(Y|X)
-							\end{aligned} \]
-							<p> Y esto es la <b>informaci&oacute;n mutua</b></p>
-							\[\begin{aligned}
-							I(X;Y) =  H(Y) - H(Y|X) = H(Y) + H(X) - H(X|Y)
-							\end{aligned} \]
-							<p>Reducci&oacute;n en la entrop&iacute;a</p>
-						</section>
-						<section>
-							<h3>Informaci&oacute;n Mutua</h3>
-							<img src="img/mi_entropy.png" />
-						</section>
-						<!-- <section>
-							<img src="img/mi_ejercicio.png" width="1400px" />
-						</section> -->
-					
 
 					<section data-transition="slide-in">
 						<p class="bigger"><b>La co-expresi&oacute;n es dependiente de la distancia</b></p>
@@ -331,6 +247,7 @@
 						<ol class="smaller " start="4">
 							<li> Las regiones de alta co-expresi&oacute;n son preferentemente intra-citobanda</li>
 						</ol>
+						<p><br/></p>
 						<img src="img/mama/Figure7-1.png" />  
 					</section>
 
@@ -356,18 +273,38 @@
 							<li>La metodolog&iacute;a para el an&aacute;lisis de co-expresi&oacute;n y dependencia con la 
 								distancia es generalizable. 
 							</li>
+							<li>
+								Aprend&iacute; sobre el proceso de preparaci&oacute;n de un art&iacute;culo.
+								<ul>
+									<li>Contar una historia coherente y autocontenida. </li>
+									<li>Delimitar el alcance.</li>
+									<li>El proceso puede ser largo.</li>
+								</ul>
+							</li>
 							<li>En este momento estamos describiendo el fen&oacute;meno.
 								<ul>
 									<li>Estamos evaluando sus posibles implicaciones y los procesos que lo promueven.</li>
 									<li>M&uacute;ltiples proyectos involucrados.</li>
 								</ul>
 							</li>
-							<li>Añadir datos de otras &oacute;micas para evaluar las contribuciones de algunos mecanismos de regulaci&oacute;n alterados en el fen&oacute;meno de 
-								p&eacute;rdida de la co-expresi&oacute;n a larga distancia.
-							</li>
 							
 						</ul>
 					</section>
+				</section>
+				<section class="center" data-background="#ffffff" data-background-transition="zoom" class="data-vertical-align-top">
+					<h3>Meta-metodolog&iacute;a</h3>
+					<ol>
+						<li>Implementar una metodolog&iacute;a para evaluar la  p&eacute;rdida de </br>co-expresi&oacute;n
+							inter-cromos&oacute;mica que pueda aplicarse en distintos tejidos.
+						</li>
+						<li>Evaluar las contribuciones de algunos mecanismos de regulaci&oacute;n alterados en el fen&oacute;meno de 
+							p&eacute;rdida de la co-expresi&oacute;n a larga distancia.
+							
+						</li>
+						<li class="semi-out">
+							Evaluar la p&eacute;rdida de regulaci&oacute;n a larga distancia en otros tipos de c&aacute;ncer.
+						</li>
+					</ol>
 				</section>
 				<section>
 					<section class="center mama">
@@ -553,6 +490,22 @@
 						</ul>
 					</section>
 				</section>
+				<section data-transition="slide-in" class="center" data-background="#ffffff" data-background-transition="zoom">
+					<h3>Meta-metodolog&iacute;a</h3>
+					<ol>
+						<li class="semi-out">Implementar una metodolog&iacute;a para evaluar la  p&eacute;rdida de </br>co-expresi&oacute;n
+							inter-cromos&oacute;mica que pueda aplicarse en distintos tejidos.
+						</li>
+						<li class="semi-out">Evaluar las contribuciones de algunos mecanismos de regulaci&oacute;n alterados en el fen&oacute;meno de 
+							p&eacute;rdida de la co-expresi&oacute;n a larga distancia.
+							
+						</li>
+						<li>
+							Evaluar la p&eacute;rdida de regulaci&oacute;n a larga distancia en otros tipos de c&aacute;ncer.
+						</li>
+					</ol>
+				</section>
+				
 				<section  data-transition="slide-in" >
 					<h4>Metodolog&iacute;a</h4>
 						<div style="float:left;width:35%;text-align:left">
@@ -654,8 +607,7 @@
 					<ul>
 						<li>Valores promedio co-expresi&oacute;n por cada 5Mbps </li>
 						<li>Redes</li>
-						<li>Interacciones intra-cromos&oacute;micas</li>
-						<li>Distancia promedio de las comunidades en las interacciones intra-cromos&oacute;micas</li>
+						<li>Matrices de alteraci&oacute;n en n&uacute;mero de copias</li>
 					</ul>
 				</section>
 				<section data-background-transition="zoom">
@@ -709,56 +661,33 @@
 						<img src="img/tiroides/networks.png" />
 					</section>
 				</section>	
-				<section data-background-transition="zoom">
-					<section  class="center scrollable-slide pan" data-background="#ffa07a" >
-						<p>Interacciones intra-cromos&oacute;micas</p>
-						<img src="img/utero/intra.png" width="750px"/>
-					</section>
-					<section class="center scrollable-slide pan" data-background="#4682b4" data-transition="none" >
-						<p>Interacciones intra-cromos&oacute;micas</p>
-						<img src="img/colon/intra.png"  width="750px"/>
-					</section>
-					<section class="center scrollable-slide pan" data-background="#ff4500" data-transition="none">
-						<p>Interacciones intra-cromos&oacute;micas</p>
-						<img src="img/rinon/intra.png"  width="750px"/>
-					</section>
-					<section class="center  scrollable-slide pan" data-background="#000" data-transition="none">
-						<p>Interacciones intra-cromos&oacute;micas</p>
-						<img src="img/pulmon/intra.png"  width="750px"/>
-					</section>
-					<section class="center  scrollable-slide pan" data-background="img/bgs/tiroid.png"  data-background-repeat="repeat"  
-					data-background-size="50px" data-transition="none">
-						<p>Interacciones intra-cromos&oacute;micas</p>
-						<img src="img/tiroides/intra.png"  width="750px"/>
-					</section>
-				</section>
-
+				
 				<section data-background-transition="zoom">
 					<section  class="center" data-background="#ffa07a" >
-						<p>Distancia promedio de las comunidades en las interacciones intra-cromos&oacute;micas</p>
+						<p>Matriz de Alteraci&oacute;n en n&uacute;mero de copias</p>
 						<h3>&Uacute;tero</h3>
-						<img src="img/utero/comm-meandist-histogram-network.png" />
+						<img src="img/utero/uterus-ascat-heatmap.png" />
 					</section>
 					<section class="center" data-background="#4682b4" data-transition="none" >
-						<p>Distancia promedio de las comunidades en las interacciones intra-cromos&oacute;micas</p>
+						<p>Matriz de Alteraci&oacute;n en n&uacute;mero de copias</p>
 						<h3>Colon</h3>
-						<img src="img/colon/comm-meandist-histogram-network.png" />
+						<img src="img/colon/colorectal-ascat-heatmap.png" />
 					</section>
 					<section class="center" data-background="#ff4500" data-transition="none">
-						<p>Distancia promedio de las comunidades en las interacciones intra-cromos&oacute;micas</p>
+						<p>Matriz de Alteraci&oacute;n en n&uacute;mero de copias</p>
 						<h3>Riñ&oacute;n</h3>
-						<img src="img/rinon/comm-meandist-histogram-network.png" />
+						<img src="img/rinon/kidney-ascat-heatmap.png" />
 					</section>
 					<section class="center" data-background="#000" data-transition="none">
-						<p>Distancia promedio de las comunidades en las interacciones intra-cromos&oacute;micas</p>
+						<p>Matriz de Alteraci&oacute;n en n&uacute;mero de copias</p>
 						<h3>Pulm&oacute;n</h3>
-						<img src="img/pulmon/comm-meandist-histogram-network.png" />
+						<img src="img/pulmon/lung-ascat-heatmap.png" />
 					</section>
 					<section class="center" data-background="img/bgs/tiroid.png"  data-background-repeat="repeat"  
 					data-background-size="50px" data-transition="none">
-						<p>Distancia promedio de las comunidades en las interacciones intra-cromos&oacute;micas</p>
+						<p>Matriz de Alteraci&oacute;n en n&uacute;mero de copias</p>
 						<h3>Tiroides</h3>
-						<img src="img/tiroides/comm-meandist-histogram-network.png" />
+						<img src="img/tiroides/thyroid-ascat-heatmap.png" />
 					</section>
 				</section>
 				<section class="center">
@@ -793,15 +722,133 @@
 						</li>
 					</ul>
 				</section>
-				<section class = "center">
-					<img src="img/intro/emerging-hallmarks-cancer-ESP.png" style="width:70%;"/>
-					<small class="cita">Hanahan, Douglas, and Robert A. Weinberg. 
-					<b>Hallmarks of cancer: the next generation.</b> cell 144, no. 5 (2011): 646-674.</small>
-				</section>  
+				<section class="center">
+					<h3>Este semestre</h3>
+					<ul>
+						<li>
+							Analizar las muestras de los tejidos restantes: pr&oacute;stata, h&iacute;gado.  
+							<ul>
+								<li class="greenish">
+									Evaluar agregar tejidos con menos de 50 muestras en sanos.
+								</li>
+							</ul>
+						</li>
+						<li>
+							Obtener:
+							<ul>
+								<li class="greenish">Redes</li>
+								<li class="greenish">Matrices de CNVs</li>
+								<li class="greenish">Matrices de Expresi&oacute;n</li>
+								<li class="greenish">
+									Expresi&oacute;n diferencial
+								</li>
+							</ul>
+						</li>
+						<li>
+							Preparar art&iacute;culo.
+							<ul>
+								<li class="greenish">¿Qu&eacute; papel juegan los CNVs en las redes?</li>
+								<li class="greenish">¿Hay alteraciones asociadas a los fenotipos en las redes
+									y las matrices de CNVs?
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</section>
 				<section class="center">
 					<h3 class="pinkish">¡Gracias!</h3>
 				</section>
-				
+				<section>
+					<section class="center">
+						<h3>Informaci&oacute;n Mutua</h3>
+						<ul>
+							<li>Es una medida de dependencia estad&iacute;stica entre dos variables aleatorias.</li>
+							<li>Expresa qu&eacute; tanta informaci&oacute;n nos dice una variable sobre otra. </li>
+							
+						</ul>
+						<p class="greenish" style="text-align:center;">¿Qu&eacute; tanto el conocer los valores de expresi&oacute;n
+							del gen A en el conjunto de mis muestras me ayuda para conocer los valores de expresi&oacute;n
+							del gen B?
+						</p>
+						<ul>
+							<li>Reducci&oacute;n de <b>incertidumbre</b> de una variable aleatoria debido al conocimiento
+								debido al conocimiento del valor de otra variable.
+							</li>
+						</ul>
+					</section>
+					<section data-transition="slide-in">
+						<h3>Entrop&iacute;a</h3>
+						<ul>
+							<li>En forma cualitativa, es una medida de incertidumbre.</li>
+							<li>Caracteriza qu&eacute; tan dif&iacute;cil de predecir es una variable aleatoria.
+								<ul>
+									<li class="greenish">La variable X es el n&uacute;mero ganador en una ruleta. </li>
+									<li class="greenish">La variable Y es el n&uacute;mero ganador en una dado. </li>
+									<p class="greenish">La entrop&iacute;a de X es mayor que la entrop&iacute;a de Y </p>
+								</ul>
+							</li>
+							<li class="fragment fade-up">
+								Aunque no solo se toman en cuenta los posibles valores, sino tambi&eacute;n su frecuencia
+								<ul>
+									<li class="greenish">
+										Un dado cargado donde 90% de las tiradas resulta en 2 tiene menor entrop&iacute;a
+										que un dado sin cargar.
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</section>
+					<section>
+						<h3>Entrop&iacute;a</h3>
+						<p>No es un concepto vago, tiene una deficini&oacute;n matem&aacute; precisa:</p>
+						<p> Si una variable aleatoria $X$ toma valores en el conjunto
+							$\chi = {x_1, x_2, x_3, \dots ,x_n }$, entonces la entrop&iacute;a de la variable 
+						aleatoria   $X$ se calcula como</p>
+						\[\begin{aligned}
+						H(X) = - \sum_{x \in \chi} P(x) \log P(x)
+						\end{aligned} \]
+						<p> Si tomamos $\log$ en base 2, la entrop&iacute;a se expresa en bits. </p>
+					</section>
+					<section>
+						<h3>Entrop&iacute;a</h3>
+						<p>Pero est&aacute;bamos hablando de dos variables.</p>
+						<p><b>Entrop&iacute;a conjunta:</b> Calcular entrop&iacute;a sobre todos los posibles
+						pares de las variables aleatorias. </p>
+						\[\begin{aligned}
+						H(X, Y) = - \sum_{x \in \chi} \sum_{y \in \psi}  P(x,y) \log P(x,y)
+						\end{aligned} \]
+						<p><b>Entrop&iacute;a condicional:</b> La entrop&iacute;a de una variable aleatoria dada otra. </p>
+							\[\begin{aligned}
+							H(X| Y) = - \sum_{x \in \chi}   P(x) H(Y|X=x)
+							\end{aligned} \]
+					</section>
+					<section>
+						<h3>Entrop&iacute;a</h3>
+						<p>Ambas est&aacute;n relacionadas por las siguientes igualdades</p>
+						
+						\[\begin{aligned}
+						H(X, Y) = H(X) + H(X|Y)
+						\end{aligned} \]
+						\[\begin{aligned}
+						H(X|Y) \neq H(Y|X)
+						\end{aligned} \]
+						\[\begin{aligned}
+						H(X) - H(X|Y) = H(Y) - H(Y|X)
+						\end{aligned} \]
+						<p> Y esto es la informaci&oacute;n mutua</p>
+						\[\begin{aligned}
+						I(X;Y) =  H(Y) - H(Y|X) = H(Y) + H(X) - H(X|Y)
+						\end{aligned} \]
+						<p>Reducci&oacute;n en la entrop&iacute;a</p>
+					</section>
+					<section>
+						<h3>Informaci&oacute;n Mutua</h3>
+						<img src="img/mi_entropy.png" />
+					</section>
+					<section>
+						<img src="img/mi_ejercicio.png" width="1400px" />
+					</section>
+				</section>
 				<section>
 					<section class="center">
 						<h3 style="text-transform:none">RNA-seq</h3>
