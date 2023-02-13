@@ -5,8 +5,6 @@
   
 .reveal section img {
 	margin: 15px 0px;
-  	background: rgba(255, 255, 255, 0.12);
-  	box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
 }
 
 .reveal section.pan img {
@@ -20,6 +18,7 @@
 .reveal h5,
 .reveal h6 {
   color: #002b36;
+  text-transform: none;
  }
 
 .reveal section table.metod img {
@@ -159,4 +158,9 @@
 .scrollable-slide {
     height: 1000px;
     overflow-y: auto !important;
+}
+
+.reveal a {
+	text-decoration: none;
+	color:dimgray
 }
