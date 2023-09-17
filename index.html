@@ -47,20 +47,43 @@
 				</section>
 				<section data-auto-animate>
 					<h2>El cáncer es un problema de salud mundial</h2>
+					<p class="greenish" style="margin-top:100px;">Su creciente importancia en la tasa de motalidad 
+						está asociada con una transición epidemiológica:
+					</p>
+					<ul class="sep bigger">
+						<li> Disminución en la mortalidad por enfermedades infecciosas.</li>
+					</ul>
+				</section>
+				<section data-auto-animate>
+					<h2>El cáncer es un problema de salud mundial</h2>
+					<p class="greenish" style="margin-top:100px;">Su creciente importancia en la tasa de motalidad 
+						está asociada con una transición epidemiológica:
+					</p>
+					<ul class="sep bigger">
+						<li> Aumento en la mortalidad por enfermedades no transmisibles o crónicas.</li>
+						<li class="greyish"> Disminución en la mortalidad por enfermedades infecciosas.</li>
+					</ul>
 					
-					<p> Transición epidemiológica</p>
-		
 				</section>
 				<section data-auto-animate>
 					<h2>El cáncer es un problema de salud en México</h2>
-					
-				
-		
+					<div class="half">	<img src="img/intro/prevalencia_mexico.png"/></div>
+					<div><p class="greenish" style="text-align: left;margin-top: 50px;">Tipos de cáncer con mayores registros de muerte:</p>
+					<ul  style="margin-left: 20px;">
+						<li>Pulmón</li>
+						<li>Gástrico</li>
+						<li>Próstata</li>
+						<li>Mama</li>
+						<li>Cervical</li>
+					</ul>
+					</div>
+					<small class="cita">Mohar-Betancourt, A., et al. <b>Cancer Trends in Mexico: Essential Data for the Creation and Follow-Up of Public Policies.</b> Journal of global oncology, 2017.</small>
 				</section>
 				<section>
-					<h2 style="font-size: 1.2em;">El desarrollo de un tumor está dirigido por versiones desreguladas del programa transcripcional 
-						operando dentro de las células de cáncer
-					</h2>
+					<h2>Signos distintivos del cáncer</h2>
+					<p class="greenish">Aunque es un proceso multifacético y heterogéneo, existen características 
+						comunes en el desarrollo de tumores
+					</p>
 
 					<img src="img/intro/cancer-desarrollo.gif"/>
 				</section>
@@ -73,6 +96,14 @@
 					<img src="img/intro/emerging-hallmarks-cancer-ESP.png"/>
 					<small class="cita">Hanahan and Weinberg.<b>Hallmarks of cancer: the next generation. </b>. 
 						Cell, 2011.</small>
+				</section>
+				<section>
+					<h2 style="font-size: 1.2em;">El desarrollo de un tumor está dirigido por versiones desreguladas del programa transcripcional 
+						operando dentro de las células de cáncer
+					</h2>
+
+					<img src="img/intro/transcripcion.png"/>
+					<small class="cita">Khan Academy</small>
 				</section>
 				<section>
 					<h2 style="font-size: 1.2em;">El desarrollo de un tumor está dirigido por versiones desreguladas del programa transcripcional 
@@ -624,61 +655,112 @@
 						<img src="img/pan-loss/other_networks.png" width="63%">
 						<small>Redes con 100 mil interacciones construidas con la misma metodología.</small>
 					</section>
+					<section  data-background="#002b36" data-background-transition="zoom" class="center">
+						<h1>Conclusiones</h1>
+					</section>
+					
 	
 					<section class="center">
-						<h4>Conclusions</h4>
 						<ul class="msep">
-							<li class="fragment">Co-expression networks, infered from RNA-seq data allow us to study significant transcriptome associations</li>
-							<li class="fragment slide-in">There is a loss of long range co-expression in cancer
-								<ul class="ssmaller" >
+							<li> Las redes de co-expresión, inferidas a partir de datos de RNA-seq, nos permiten estudiar asociaciones significativas en el transcriptoma. 
+							</li>
+							<li>
+								Se describen dos fenómenos asociados a la co-expresión genética en cáncer:
+								<ul >
 									<li class="greenish">
-										Normal tissues: Interactions from genes in different chromosomes
+										Pérdida de co-expresión inter-cromosómica.
 									</li>
 									<li class="greenish">
-										Cancer tissues: Interactions from neighbor genes in the same chromosome
+										Decaimiento dependiente de la distancia física entre genes en las interacciones intra-
+										cromosómicas.
 									</li>
 								</ul>
 							</li>
-							<li class="fragment">Network topology display phenotype-associated functional features
-								<ul class="ssmaller">
-									<li class="greenish">Network topology is different for two different
-										conditions: normal and cancer
-									</li>
-								 </ul>
+							<li>En el fenotipo normal no hay una tendencia a interacciones -cis o -trans y los valores de alta 
+								co-expresión se observan solo en distancias muy cercanas (menores a 1Mb), previamente reportados.
 							</li>
-							<li class="fragment slide-in">The loss of long-range co-expression is not present in other chronic degenerative
-								 diseases
-								 <ul class="ssmaller">
-									<li class="greenish">At least, not in Type-2 Diabetes or Alzheimer's disease</li>
-								 </ul>
-							</li> 					
+							<li>La pérdida de co-expresión a larga distancia se presenta en diferente magnitud en los diferentes tejidos.
+									<ul >
+										<li class="greenish">Sin embargo, su prevalencia puede indicar que existe un mecanismo físico o mecánico 
+											en el genoma del cáncer que promueve patrones de expresión de alta dependencia en largas regiones.   </li>
+									</ul>
+								</li>
+							</li>
+
+							
+										
 						</ul>
 					</section>
 					<section class="center">
-						<img src="img/pan-loss/evidence.png" width="100%"/>
+						<img src="img/pan-loss/evidence.png" />
 					</section>
 					<section class="center">
-						<h4>Conclusions</h4>
-						<ul>
-							<li>The loss of inter-chromosomal co-expression and the loss of long-range co-expression are 
-								consistent, measurable and reproducible features present in all of the studied profiles
-							</li>
-							<li class="fragment fade-up">
-								There is a global alteration of the interactions in the transcriptome
-								<ul>
-									<li class="greenish">
-										Shorter distances are proferred
+						<ul class="msep">
+							<li>La topolgía de las redes es diferente para las dos condiciones.
+								<ul class="greenish">
+									
+									<li>Las redes normales tienen mayor número de interacciones únicas. </li>
+									<li>El alto número de interacciones compartidas en cáncer puede estar asociado al proceso 
+										de reversión en la diferenciación celular.
 									</li>
-								</ul>
+								 </ul>
 							</li>
-							<li class="fragment fade-up">
-								There is a contribution of multiple altered regulatory mechanisms
+							<li>Las riboproteínas conservan patrones de alta co-expresión en ambas condiciones y en todos los tejidos.
 							</li>
-							<li class="fragment fade-up">
-								Its prevalence suggests an enabling feature of the transcriptomal program
+							<li>La modularidad es diferente para las dos condiciones.
+								<ul class="greenish">
+									
+									<li>Menor modularidad en redes normales. Los eventos transcripcionales son dirigidos principalmente por
+										funciones celulares y señales del ambiente.</li>
+									<li>Módulos segregados en cáncer. Ilustran una pérdida parcial de propagación de información o ganancia
+										en regiones específicas. 
+									</li>
+								 </ul>
 							</li>
-						</ul>
+							</ul>
 					</section>
+					<section class="center">
+						<ul class="msep">
+
+						<li>Las redes tienen características funcionales asociadas al fenotipo.
+							<ul class="greenish">
+								<li>
+								En las redes normales aparecen funciones clave para el mantenimiento de la viabilidad
+								celular: traducción, metabolismo y desarrollo. </li>
+								<li>En las redes cáncer hay procesos con alteraciones características
+									 como respuesta inmune adaptativa o ciclo celular.</li>
+							</ul>
+						</li>
+						<li>La pérdida de co-expresión a larga distancia no está presente en otras enfermedades 
+							crónico-degenerativas como Diabetes tipo 2 o Alzheimer.
+							
+					   </li> 
+					</ul>		
+					   <p class="fragment"> La pérdida de co-expresión inter-cromosómica y a larga distancia son características
+						consistentes, medibles y reproducibles, presentes en todos los perfiles estudiados. <br/>
+						<span class="greenish">
+							Su prevalencia sugiere una característica habilitadora del programa transcripcional en cáncer.
+						</span>
+					   </p>
+					</section>
+				<section class="center">
+					<ul class="msep">
+						<li>Fase de descripción del fenómeno</li>
+						<li>Aunque aún no es posible dilucidar los mecanismos moleculares asociados, 
+							estudiar la co-expresión genética nos permite entender mejor los elementos regulatorios
+							asociados al proceso de transcripción. </li>
+						
+						<li>
+							Análisis posteriores:
+							<ul class="greenish">
+								<li>Datos de secuenciación de célula única para identificar tipos celulares específicos asociados al fenómeno.</li>
+								<li>Datos de otras ómicas para evaluar la influencia de los mecanismos regulatorios y sus alteraciones en la 
+									pérdida de co-expresión a larga distancia.
+								</li>
+								<li>Redes de muestra única</li>
+							</ul>
+						</li>
+					</ul>
 				</section>
 				<section class="center">
 					<h3 class="pinkish">¡Gracias!</h3>

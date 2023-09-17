@@ -230,3 +230,7 @@
 .reveal small {
 	font-size: 0.8em;
 }
+
+.reveal .greyish  {
+	color: #797d7f;
+}
